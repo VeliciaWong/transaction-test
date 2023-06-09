@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    trailingSlash: true,
+    reactStrictMode: false,
+    swcMinify: true,
+    experimental: {
+      images: {
+        unoptimized: true
+      }
+    },
+  }
+  
+  module.exports = nextConfig
+  
